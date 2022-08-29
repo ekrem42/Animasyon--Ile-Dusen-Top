@@ -1,0 +1,50 @@
+body {
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: top 4s infinite;
+    
+}
+.ball1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: top-up 4s infinite;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+@keyframes top {
+    16%, 48%, 78% {
+        top: 520px;
+        animation-timing-function: ease-in;
+    }
+    32% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    62% {
+        top: 300px;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        top: 200px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 190px;
+        left: 80%;
+        animation-timing-function: ease-in;
+        transform: rotate(360deg);
+    }
+}
